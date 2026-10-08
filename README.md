@@ -38,7 +38,7 @@ Example:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=YOUR_SERVER;Database=FinalProjectDb;Trusted_Connection=True;TrustServerCertificate=True;"
+    "DefaultConnection": "Server=.;Database=FinalProjectDb;Trusted_Connection=True;TrustServerCertificate=True;"
   }
 }
 ```
