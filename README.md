@@ -306,41 +306,106 @@ Sellers have access to statistics related to their business:
 ## 🏗️ Project Structure
 
 ```text
-E-Commerce Marketplace
+🏗️ Project Structure
+FinalProject
 │
-├── Authentication & Authorization
+├── Program.cs
+├── appsettings.json
 │
-├── Customer
+├── Areas
+│   └── Admin
+│       ├── Controllers
+│       │   ├── SellerRequestsController.cs
+│       │   ├── CategoriesController.cs
+│       │   ├── ProductsController.cs
+│       │   ├── OrdersController.cs
+│       │   ├── UsersController.cs
+│       │   └── DashboardController.cs
+│       │
+│       └── Views
+│           ├── SellerRequests
+│           ├── Categories
+│           ├── Products
+│           ├── Orders
+│           ├── Users
+│           └── Dashboard
+│
+├── Controllers
+│   ├── HomeController.cs
+│   ├── AccountController.cs
+│   ├── SellerController.cs
+│   ├── SellerProductsController.cs
+│   ├── SellerOrdersController.cs
+│   ├── ProductsController.cs
+│   ├── WishlistController.cs
+│   ├── ReviewsController.cs
+│   ├── CartController.cs
+│   ├── OrdersController.cs
+│   └── ChatController.cs
+│
+├── Data
+│   ├── ApplicationDbContext.cs
+│   └── DbInitializer.cs
+│
+├── Models
+│   ├── ApplicationUser.cs
+│   ├── SellerRequest.cs
+│   ├── Category.cs
+│   ├── Product.cs
+│   ├── Review.cs
+│   ├── WishlistItem.cs
+│   ├── CartItem.cs
+│   ├── Order.cs
+│   ├── OrderItem.cs
+│   └── OrderStatus.cs
+│
+├── Services
+│   ├── IPurchaseVerifier.cs
+│   ├── IOrderHandoff.cs
+│   ├── OrderHandoff.cs
+│   ├── PendingOrderHandoff.cs
+│   ├── OrderLifecycleService.cs
+│   ├── IChatbotService.cs
+│   ├── ChatbotService.cs
+│   └── ChatbotOptions.cs
+│
+├── ViewModels
+│   ├── RegisterViewModel.cs
+│   ├── LoginViewModel.cs
+│   ├── SellerRequestViewModel.cs
+│   ├── AdminSellerRequestViewModel.cs
+│   ├── ProductViewModel.cs
+│   ├── ProductCatalogViewModel.cs
+│   ├── ProductDetailsViewModel.cs
+│   ├── ReviewViewModels.cs
+│   ├── CartViewModels.cs
+│   ├── SellerOrderViewModels.cs
+│   ├── AdminUserViewModel.cs
+│   ├── AdminDashboardViewModel.cs
+│   ├── SellerDashboardViewModel.cs
+│   └── ChatViewModels.cs
+│
+├── Views
+│   ├── Account
+│   ├── Seller
+│   ├── SellerProducts
+│   ├── SellerOrders
 │   ├── Products
-│   ├── Search & Filtering
-│   ├── Cart
-│   ├── Checkout
-│   ├── Orders
 │   ├── Wishlist
-│   └── Reviews
+│   ├── Cart
+│   ├── Orders
+│   │
+│   └── Shared
+│       ├── _Layout.cshtml
+│       ├── _StarRating.cshtml
+│       ├── _OrderStatusBadge.cshtml
+│       └── _Chatbot.cshtml
 │
-├── Seller
-│   ├── Product Management
-│   ├── Order Management
-│   └── Seller Dashboard
+├── Migrations
 │
-├── Administrator
-│   ├── User Management
-│   ├── Seller Approval
-│   ├── Product Management
-│   ├── Category Management
-│   ├── Order Management
-│   └── Admin Dashboard
-│
-└── Database
-    ├── Users
-    ├── Products
-    ├── Categories
-    ├── Orders
-    ├── Order Items
-    ├── Cart
-    ├── Wishlist
-    └── Reviews
+└── wwwroot
+    └── images
+        └── products
 ```
 
 ---
