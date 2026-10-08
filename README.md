@@ -492,14 +492,6 @@ This project was developed as a **Graduation Project** to demonstrate practical 
 
 ---
 
-## 👨‍💻 Contributors
-
-**Graduation Project Team**
-
-* Add your team members here.
-
----
-
 ## 📄 License
 
 This project was developed for educational and graduation project purposes.
